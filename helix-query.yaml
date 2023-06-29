@@ -24,11 +24,11 @@ indices:
         select: none
         value: parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')
 
-  de:
+  it:
     <<: *def
     include:
       - '/it/food/**'
     exclude:
       - '/it/food/drafts/**'
     target: /it/food/query-index.xlsx
-    
+
